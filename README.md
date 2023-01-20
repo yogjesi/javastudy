@@ -8,7 +8,7 @@ Start in 20-Jan-2023
 
 - 각 장마다 폴더 생성 : chN
 
-  ![폴더 구조](..\ect\folder_structure.png)
+  ![폴더 구조](javastudy\ect\folder_structure.png)
 
   
 
