@@ -7,11 +7,11 @@ public class CustomerTest {
 	public static void main(String[] args) {
 		ArrayList<Customer> customerList = new ArrayList<Customer>();
 		
-		Customer a = new Customer(10010, "이우영");
-		Customer b = new Customer(10011, "이원웅");
-		Customer c = new GoldCustomer(10012, "이선민");
-		Customer d = new GoldCustomer(10013, "이고원");
-		Customer e = new VIPCustomer(10014, "브라운조던", 1);
+		Customer a = new Customer(10010, "이순신");
+		Customer b = new Customer(10011, "김유신");
+		Customer c = new GoldCustomer(10012, "조한나");
+		Customer d = new GoldCustomer(10013, "박범철");
+		Customer e = new VIPCustomer(10014, "고길동", 1);
 		
 		customerList.add(a);
 		customerList.add(b);
