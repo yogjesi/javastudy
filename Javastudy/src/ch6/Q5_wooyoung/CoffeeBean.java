@@ -1,4 +1,4 @@
-package ch6.Q4_wooyoung;
+package ch6.Q5_wooyoung;
 
 public class CoffeeBean {
 	int money; // 커피빈이 벌어들이는 금액

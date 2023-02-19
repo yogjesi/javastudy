@@ -1,4 +1,4 @@
-package ch6.Q4_wooyoung;
+package ch6.Q5_wooyoung;
 
 public class Starbucks {
 	int money; // 스벅이 벌어들이는 금액
