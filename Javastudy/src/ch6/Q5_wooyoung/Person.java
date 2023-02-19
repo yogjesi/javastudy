@@ -1,4 +1,4 @@
-package ch6.Q4_wooyoung;
+package ch6.Q5_wooyoung;
 //아침 출근길, 김씨 4,000원 별다방 아메리카노
 //이씨, 4,500원 콩다방 라떼
 public class Person {
