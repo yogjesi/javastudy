@@ -1,10 +1,11 @@
 package ch10;
 
-public interface Sort  {
-	void ascending(int[] arr);
-	void descending(int[] arr);
+public interface Sort {
+	public void ascending(int[] arr);
+	public void descending(int[] arr);
+//	public void description();
 	
-	default void description(){
-		System.out.println("¼ıÀÚ¸¦ Á¤·ÄÇÏ´Â ¾Ë°í¸®Áò ÀÔ´Ï´Ù");
+	default void description() {
+		System.out.println("ìˆ«ìë¥¼ ì •ë ¬í•˜ëŠ” ì•Œê³ ë¦¬ì¦˜ì…ë‹ˆë‹¤.");
 	}
 }

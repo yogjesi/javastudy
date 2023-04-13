@@ -1,17 +1,37 @@
 package ch8;
 
+class Animal {
+	public void move() {
+		System.out.println("ë™ë¬¼ì´ ì›€ì§ì…ë‹ˆë‹¤.");
+	}
+}
+
+class Human extends Animal {
+	public void move() {
+		System.out.println("ì‚¬ëŒì´ ë‘ ë°œë¡œ ê±·ìŠµë‹ˆë‹¤.");
+	}
+}
+
+class Tiger extends Animal {
+	public void move() {
+		System.out.println("í˜¸ë‘ì´ê°€ ë„¤ ë°œë¡œ ëœë‹ˆë‹¤.");
+	}
+}
+
+class Eagle extends Animal {
+	public void move() {
+		System.out.println("ë…ìˆ˜ë¦¬ê°€ í•˜ëŠ˜ì„ ë‚©ë‹ˆë‹¤.");
+	}
+}
+
 public class AnimalTest1 {
-	public static void main(String[ ] args) {
-		
-		
+	public static void main(String[] args) {
 		AnimalTest1 aTest = new AnimalTest1();
 		aTest.moveAnimal(new Human());
 		aTest.moveAnimal(new Tiger());
+		aTest.moveAnimal(new Eagle());
 	}
-	// ÀÌ ¸Ş¼­µå´Â ¾î¶² ÀÎ½ºÅÏ½º°¡ ¸Å°³º¯¼ö·Î ³Ñ¾î¿Íµµ ¸ğµÎ Animal ÇüÀ¸·Î º¯È¯ÇÑ´Ù.
-	// Áï , Animal ani = new Human(); ÀÌ·±½ÄÀ¸·Î ¹Ù²ï´Ù.
-	// ´Ü °¡»ó¸Ş¼­µå ¿ø¸®¿¡ ÀÇÇØ ¸Å°³º¯¼Ò·Î ³Ñ¾î¿Â ½ÇÁ¦ ÀÎ½ºÅÏ½ºÀÇ ¸Ş¼­µåÀÌ±â¿¡ Ãâ·Â¹®ÀÌ ´Ş¶óÁü, ÀÌ°Ô ´ÙÇü¼º!
-	// ´ÙÇü¼ºÀÇ ÀåÁ¡Àº »óÀ§ Å¬·¡½º¿¡¼­ °øÅë ºÎºĞÀÇ ¸Ş¼­µå Á¦°øÇÏ°í, ÇÏÀ§ Å¬·¡½º¿¡¼­ Ãß°¡ ¿ä¼Ò µ¡ºÙÀÌ¸é ÄÚµå ¾ç ÁÙ°í Æí¸®
+	
 	public void moveAnimal(Animal animal) {
 		animal.move();
 	}

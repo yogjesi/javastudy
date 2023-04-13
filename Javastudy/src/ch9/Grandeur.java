@@ -1,29 +1,32 @@
 package ch9;
 
 public class Grandeur extends Car{
+	String car = "Grandeur";
 
 	@Override
 	public void start() {
-		System.out.println("Grandeur ½Ãµ¿À» ÄÕ´Ï´Ù.");
+		System.out.println(car + " ì‹œë™ì„ ì¼­ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void drive() {
-		// TODO Auto-generated method stub
-		System.out.println("Grandeur ´Ş¸³´Ï´Ù.");
+		System.out.println(car + " ë‹¬ë¦½ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void stop() {
-		// TODO Auto-generated method stub
-		System.out.println("Grandeur ¸ØÃä´Ï´Ù.");
+		System.out.println(car + " ë©ˆì¶¥ë‹ˆë‹¤.");
+		
 	}
 
 	@Override
-	public void turnoff() {
-		// TODO Auto-generated method stub
-		System.out.println("Grandeur ½Ãµ¿À» ²ü´Ï´Ù.");
+	public void turnOff() {
+		System.out.println(car + " ì‹œë™ì„ ë•ë‹ˆë‹¤.");
+		
 	}
 
-
+	@Override
+	public void wiper() {
+		// TODO Auto-generated method stub	
+	}
 }

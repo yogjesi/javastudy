@@ -1,24 +1,36 @@
 package ch8;
 
 public class Customer {
-	// 1) ¸â¹öº¯¼ö
-	protected int customerID; //°í°´ ¾ÆÀÌµğ
-	protected String customerName; //°í°´ ÀÌ¸§
-	protected String customerGrade; // °í°´ µî±Ş
-	int bonusPoint; // º¸³Ê½º Æ÷ÀÎÆ®
-	double bonusRatio; //Àû¸³ ºñÀ²
+	protected int customerID;
+	protected String customerName;
+	protected String customerGrade;
+	int bonusPoint;
+	double bonusRatio;
 	
-	// 2) »ı¼ºÀÚ
+//	public Customer() {
+//		customerGrade = "SILVER";
+//		bonusRatio = 0.01;
+//		System.out.println("Customer() ìƒì„±ì í˜¸ì¶œ ")
+//	}
+	
 	public Customer(int customerID, String customerName) {
+		this.customerID =  customerID;
 		this.customerName = customerName;
-		customerGrade = "SILVER"; // ±âº» µî±Ş
+		customerGrade = "SILVER";
 		bonusRatio = 0.01;
-		System.out.println("Customer »ı¼ºÀÚ È£Ãâ");
+		System.out.println("Customer(int, String) ìƒì„±ì í˜¸ì¶œ");
+	}
+	 
+	public int calcPrice(int price) {
+		bonusPoint += price * bonusRatio;
+		return price;
 	}
 	
-	// 3) method
-	// protected ¿¹¾à¾î·Î ¼±¾ğÇÑ º¯¼ö¸¦ ¿ÜºÎ¿¡¼­ »ç¿ëÇÒ ¼ö ÀÖ°Ô get(), set() method Ãß°¡
-	public int getCustomerId() {
+	public String showCustomerInfo() {
+		return customerName + " ë‹˜ì˜ ë“±ê¸‰ì€ " + customerGrade + "ì´ë©°, ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ëŠ” " + bonusPoint + "ì…ë‹ˆë‹¤.";
+	}
+	
+	public int getCustomerID() {
 		return customerID;
 	}
 	
@@ -40,14 +52,5 @@ public class Customer {
 	
 	public void setCustomerGrade(String customerGrade) {
 		this.customerGrade = customerGrade;
-	}
-	public int calcPrice(int price) {
-		bonusPoint += price * bonusRatio; // º¸³Ê½º Æ÷ÀÎÆ® °è»ê
-		return price;
-	}
-	
-	public String showCustomerInfo() {
-		return customerName + "´ÔÀÇ µî±ŞÀº" + customerGrade + "ÀÌ¸ç, º¸³Ê½º Æ÷ÀÎÆ®´Â" + 
-	bonusPoint + "ÀÔ´Ï´Ù";
 	}
 }

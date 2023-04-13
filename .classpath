@@ -2,5 +2,10 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="Javastudy/src"/>
+<<<<<<< HEAD
 	<classpathentry kind="output" path="Javastudy/bin"/>
+=======
+	<classpathentry kind="src" path="algorithm/src"/>
+	<classpathentry kind="output" path="bin"/>
+>>>>>>> jiwon
 </classpath>

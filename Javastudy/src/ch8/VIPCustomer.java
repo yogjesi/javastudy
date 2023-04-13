@@ -1,33 +1,34 @@
 package ch8;
 
-public class VIPCustomer extends Customer {
-	private int agentID; //»ó´ã¿ø ¾ÆÀÌµğ
-	double saleRatio; //ÇÒÀÎÀ²
+public class VIPCustomer extends Customer {	
+	private int agentID;
+	double saleRatio;
 	
-	// »ı¼ºÀÚ
 	public VIPCustomer(int customerID, String customerName, int agentID) {
 		super(customerID, customerName);
+		// ìƒìœ„ í´ë˜ìŠ¤ì˜ Customer()ê°€ í˜¸ì¶œë¨
 		customerGrade = "VIP";
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
-		System.out.println("VIP Customer »ı¼ºÀÚ È£Ãâ");
-	}
-	
-	//method
-	public int getAgentID() {
-		return agentID;
-	}
-	public String showCustomerInfo() {
-		return "»ó´ã¿ø ¾ÆÀÌÀÔ´Ï´Ù";
-	}
-	
-	public String showVIPInfo() {
-		return super.showCustomerInfo() + "»ó´ã¿ø ¾ÆÀÌµğ´Â" + "agentID" + "ÀÔ´Ï´Ù";
+		System.out.println("VIPCustomer(int, String) ìƒì„±ì í˜¸ì¶œ");
 	}
 	
 	@Override
 	public int calcPrice(int price) {
-		bonusPoint += price * bonusRatio; // º¸³Ê½º Æ÷ÀÎÆ® Àû¸³
-		return price - (int)(price * saleRatio); // ¿¡´Ù°¡ ÇÒÀÎ±îÁö
+		// TODO Auto-generated method stub
+		bonusPoint += price * bonusRatio;
+		return price - (int)(price * saleRatio);
+	}
+
+	public int getAgentID() {
+		return agentID;
+	}
+	
+//	public String showCustomerInfo() {
+//		return customerName + " ë‹˜ì˜ ë“±ê¸‰ì€ " + customerGrade + "ì´ë©°, ë³´ë„ˆìŠ¤ í¬ì¸íŠ¸ëŠ”" + bonusPoint + "ì…ë‹ˆë‹¤.";
+//	}
+//	
+	public String showVIPInfo() {
+		return super.showCustomerInfo() + "ë‹´ë‹¹ ìƒë‹´ì› ì•„ì´ë””ëŠ” " + agentID + "ì…ë‹ˆë‹¤.";
 	}
 }

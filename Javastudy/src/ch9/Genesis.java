@@ -1,28 +1,33 @@
 package ch9;
 
 public class Genesis extends Car{
+	String car = "Genesis";
 
 	@Override
 	public void start() {
-		System.out.println("Genesis ½Ãµ¿À» ÄÕ´Ï´Ù.");
+		System.out.println(car + " ì‹œë™ì„ ì¼­ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void drive() {
-		// TODO Auto-generated method stub
-		System.out.println("Genesis ´Ş¸³´Ï´Ù.");
+		System.out.println(car + " ë‹¬ë¦½ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void stop() {
-		// TODO Auto-generated method stub
-		System.out.println("Genesis ¸ØÃä´Ï´Ù.");
+		System.out.println(car + " ë©ˆì¶¥ë‹ˆë‹¤.");
+		
 	}
 
 	@Override
-	public void turnoff() {
-		// TODO Auto-generated method stub
-		System.out.println("Genesis ½Ãµ¿À» ²ü´Ï´Ù.");
+	public void turnOff() {
+		System.out.println(car + " ì‹œë™ì„ ë•ë‹ˆë‹¤.");
+		
 	}
 
+	@Override
+	public void wiper() {
+		// TODO Auto-generated method stub
+		
+	}
 }

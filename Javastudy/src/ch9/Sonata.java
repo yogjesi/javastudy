@@ -1,26 +1,32 @@
 package ch9;
 
-public class Sonata extends Car {
+public class Sonata extends Car{
+	String car = "Sonata";
+
 	@Override
 	public void start() {
-		System.out.println("Sonata ½Ãµ¿À» ÄÕ´Ï´Ù.");
+		System.out.println(car + " ì‹œë™ì„ ì¼­ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void drive() {
-		// TODO Auto-generated method stub
-		System.out.println("Sonata ´Ş¸³´Ï´Ù.");
+		System.out.println(car + " ë‹¬ë¦½ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void stop() {
-		// TODO Auto-generated method stub
-		System.out.println("Sonata ¸ØÃä´Ï´Ù.");
+		System.out.println(car + " ë©ˆì¶¥ë‹ˆë‹¤.");
+		
 	}
 
 	@Override
-	public void turnoff() {
+	public void turnOff() {
+		System.out.println(car + " ì‹œë™ì„ ë•ë‹ˆë‹¤.");
+		
+	}
+
+	@Override
+	public void wiper() {
 		// TODO Auto-generated method stub
-		System.out.println("Sonata ½Ãµ¿À» ²ü´Ï´Ù.");
 	}
 }
